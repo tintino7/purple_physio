@@ -1,0 +1,148 @@
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+    
+}
+
+.purple {
+    color: purple;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Start Nav bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    /* border: 1px solid black; */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); */
+    /* box-shadow: 0 0 2px 2px; */
+}
+
+/* nav-item == all the <li/> consisting nav links and nav-item-menu == <li/> with Hamburger menu*/ 
+.nav-item, .nav-item-menu {
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+    
+}
+
+/* Buttons with Menu and Close  */
+.menu:hover, .close:hover, .nav-ul:hover /* cause of weird action */ {
+    cursor: pointer;
+}
+
+.nav-ul {
+    margin-right: 3%;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(15, 14, 14);
+}
+
+.nav-link:hover{
+    color: blueviolet;
+}
+
+.menu, .close {
+    display: none;
+    background-color: rgb(252, 252, 252);
+    border: none;
+}
+
+.menu-img , .close-img{
+    width: 20px;
+    height: auto;
+}
+
+
+/* only show when menu bar clicked */
+.is-mobile {
+    display: none;
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    top: 3.5rem;
+    
+}
+
+/* width less than 600px */
+@media only screen and (max-width: 750px) {
+    .menu {
+      display: inline;
+    }
+  
+    .nav-item {
+      display: none;
+    }
+  
+  }
+
+
+/* Start Logo */
+
+figure {
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
+.logo {
+    display: block;
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* End Logo */
+
+
+.is-mobile {
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    padding: 0.75rem 0 ;
+}
+
+.nav:hover, .nav:active {
+    background-color: rgb(197, 198, 198);
+}
+
+/* End Nav bar */
+
+
+
+
+/* Main content  */
+
+
+
+main{
+    /* cause nav is fixed at top */
+    padding-top: 3.5rem;
+}
+/* End of Main content */
+
+
