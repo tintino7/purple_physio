@@ -152,7 +152,7 @@ main{
 
 
 .main-div {
-   background-image: url(images/test_1.png);
+   background-image: url(images/wow_main.png);
    background-size: cover;
    background-position: center;
    width: 100%;
@@ -224,7 +224,7 @@ main{
 
 @media only screen and (max-width: 950px) {
     .main-div {
-        background-image: url(images/test-medium.png);
+        background-image: url(images/wow_main_med.png);
         margin:0 10%;
         width: 80%;
         height: 750px;
@@ -255,7 +255,7 @@ main{
 @media only screen and (max-width: 500px) {
     .main-div {
         width: 100%;
-        background-image: url(images/test-mobile.png);
+        background-image: url(images/wow_main_mob.png);
         height: 750px;
         border-radius: 0;
         margin: 0 0 0 0;
@@ -288,6 +288,7 @@ main{
         font-size: 1rem;
         font-weight: 200;
     }
+    
   }
 
 /* .main-img {
@@ -299,3 +300,43 @@ main{
 /* End of Main content */
 
 
+/* hero2 :start */
+.hero2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    word-spacing: 3px;
+}
+
+.hero2-sub {
+    width: 60%;
+    
+}
+
+.hero2-h2{
+    margin: 0 0 1.5rem 0;
+    font-size: xx-large;
+    font-weight: 700;
+    color: #3d3845;
+}
+
+.hero2-separator {
+    margin: 0 0 1.5rem 0;  
+    display: flex;
+    justify-content: center;
+}
+
+.hero2-separator-sub {
+    border-bottom: 5px solid #9264ef;
+    width: 50px;
+}
+
+.hero2-p {
+    font-size: larger;
+    font-weight: 500;
+    color: rgb(124, 124, 124);
+}
+
+/* hero2 end */
