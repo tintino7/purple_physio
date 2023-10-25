@@ -152,7 +152,7 @@ main{
 
 
 .main-div {
-   background-image: url(../images/test_1.png);
+   background-image: url(images/test_1.png);
    background-size: cover;
    background-position: center;
    width: 100%;
@@ -224,7 +224,7 @@ main{
 
 @media only screen and (max-width: 950px) {
     .main-div {
-        background-image: url(../images/test-medium.png);
+        background-image: url(images/test-medium.png);
         margin:0 10%;
         width: 80%;
         height: 750px;
@@ -255,7 +255,7 @@ main{
 @media only screen and (max-width: 500px) {
     .main-div {
         width: 100%;
-        background-image: url(../images/test-mobile.png);
+        background-image: url(images/test-mobile.png);
         height: 750px;
         border-radius: 0;
         margin: 0 0 0 0;
