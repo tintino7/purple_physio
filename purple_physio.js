@@ -79,3 +79,5 @@ function apply_shadow(){
 
 
 document.addEventListener('scroll', apply_shadow);
+
+
