@@ -418,8 +418,9 @@ main{
 .h-ser img {
     width: 100px;
     height: 100px;
-    /* background-color: aliceblue; */
+    /* background-color: rgb(98, 221, 64); */
 }
+
 
 .h-ser p{
     text-align: center;
