@@ -295,14 +295,18 @@ main{
 
     .main-div, .home-banner {
         width: 98%;
-        height: 750px;
+        height: 600px;
         border-radius: 0;
         margin: 0 1% 0 1%;
         align-items: center;
         background-position: center 75%;
+        border-radius: 20px;
         /* border: 1px solid red; */
     }
-
+     
+    .home-banner {
+        height: 750px;
+    }
     .sub-main-div{
         width: 100%;
         justify-content: start;
@@ -325,7 +329,7 @@ main{
 
     .sub-main-div .hero-h2 {
         font-size: 1rem;
-        font-weight: 200;
+        font-weight: 300;
     }
     
   }
@@ -428,7 +432,7 @@ main{
     width: 200px;
     height: 200px;
     /* border: 1px solid black; */
-    padding: 10px;
+    padding: 5px;
     border-radius: 50%;
     background-color: #9690FF;
 }
@@ -465,9 +469,11 @@ main{
         width: 80%;
         gap: 1rem;
         height: auto;
+        background-color: #e5e7fc;
+        padding: 1rem;
     }
     .home-services {
-        gap: 1rem;
+        gap: 2rem;
     }
 }
 
