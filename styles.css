@@ -21,16 +21,75 @@ figure {
     gap: 1rem;
 }
 
+
+
+/* Start of clinic info */
+.clinic-info {
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+    margin: 10px 0 0 0;
+    padding: 0px 50px 10px 0px;
+    border-bottom: 1px solid rgb(234, 231, 231);
+}
+
+
+.clinic-info-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #7a7a7a;
+    /* background-color: #9264ef; */
+}
+
+.timing {
+    width: 250px;
+}
+
+.clinic-info-sub .sub {
+    font-size: 0.7rem;
+    color: #858585;
+}
+
+@media only screen and (max-width: 950px) {
+
+    .clinic-info {
+        display: none;
+    }
+
+}
+/* End of clinic info */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Start Nav bar */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.6rem;
+    padding: 0.4rem;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    position: fixed;
+    position: sticky;
     top: 0;
     background-color: rgb(255, 255, 255);
     /* border: 1px solid black; */
@@ -61,7 +120,8 @@ nav {
 
 .nav-link {
     text-decoration: none;
-    color: rgb(15, 14, 14);
+    color: rgb(98, 98, 98);
+    font-weight: 575;
     -webkit-tap-highlight-color: transparent; /* to remove clicking animation */
 }
 
@@ -145,8 +205,8 @@ figure {
 
 
 main{
-    /* cause nav is fixed at top */
-    padding-top: 4rem;
+    
+    padding-top: .75rem;
 }
 
 .main-div {
@@ -223,7 +283,7 @@ main{
 .main-button:hover {
     cursor: pointer;
     transform: scale(1.03);
-    box-shadow: 0px 0px 2px #424242aa;
+    /* box-shadow: 0px 0px 2px #424242aa; */
 }
 
 .hero-h1 {
@@ -518,11 +578,11 @@ main{
 
 @media only screen and (max-width: 590px) {
     .last-hero {
-        height: 400px;
+        height: 350px;
         width: 95%;
         margin: 0 2.5%;
         margin-bottom: 100px;
-        
+        padding: 2rem;
     }
 
     

@@ -68,7 +68,7 @@ handleWindowResize();
 function apply_shadow(){
     let scroll_value = window.scrollY
 
-    if (scroll_value > 0) {
+    if (scroll_value > 80) {
         document.querySelector('nav').style.boxShadow = '0px 4px 4px rgba(0, 0, 0, 0.1)'
     }
 
