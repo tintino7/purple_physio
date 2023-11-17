@@ -573,10 +573,10 @@ main{
     margin: 0 10%;
     height: 250px;
     border-radius: 20px;
-
+    margin-bottom: 30px;
     box-shadow: 0 0 2px rgb(225, 223, 223);
     /* padding: 1rem; */
-    margin-bottom: 100px;
+    
 }
 
 .last-hero p {
@@ -604,10 +604,64 @@ main{
         height: 350px;
         width: 95%;
         margin: 0 2.5%;
-        margin-bottom: 100px;
+        margin-bottom: 30px;
         padding: 2rem;
     }
 
     
 }
 /* end of last hero */
+
+
+
+/* start of keepumov */
+.keepumov {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.keepumov div {
+    width: 45%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px rgb(150, 147, 147);
+}
+
+.keepumov1 {
+    background: url(images/keepumov1.jpg);
+    
+}
+
+.keepumov2 {
+    background: url(images/keepumov2.jpg);
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .keepumov {
+        flex-wrap: wrap;
+    }
+    .keepumov div {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .keepumov {
+        flex-wrap: wrap;
+    }
+    .keepumov div {
+        width: 80%;
+        height: 400px;
+    }
+}
+
+
+
+/* end of keepumov */
+
