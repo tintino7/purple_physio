@@ -24,14 +24,35 @@ figure {
 
 
 /* Start of clinic info */
+
+.clinic-info-logo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(234, 231, 231);
+}
+
+
+
+.clinic-info-logo .logo {
+    margin: 10px 0 0 0;
+    padding: 0px 0px 10px 50px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .clinic-info {
     height: 70px;
     display: flex;
     justify-content: end;
-    gap: 40px;
+    align-items: center;
+    gap: 12px;
     margin: 10px 0 0 0;
     padding: 0px 50px 10px 0px;
-    border-bottom: 1px solid rgb(234, 231, 231);
+    
+    
 }
 
 
@@ -44,21 +65,23 @@ figure {
     font-size: .9rem;
     font-weight: bold;
     color: #7a7a7a;
-    /* background-color: #9264ef; */
+    margin-right: 35px;
+    /* background-color: #e5d9fc; */
 }
 
-.timing {
-    width: 250px;
-}
+
 
 .clinic-info-sub .sub {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     color: #858585;
+    font-weight: 500;
 }
 
-@media only screen and (max-width: 950px) {
 
-    .clinic-info {
+
+@media only screen and (max-width: 1050px) {
+
+    .clinic-info-logo {
         display: none;
     }
 
