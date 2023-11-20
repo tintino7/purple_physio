@@ -21,7 +21,19 @@ figure {
     gap: 1rem;
 }
 
+.book-appoinment {
+    padding: .8rem;
+    background-color: #a17af0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: small;
+    
+}
 
+.book-appoinment:hover {
+    cursor: pointer;
+}
 
 /* Start of clinic info */
 
@@ -33,7 +45,7 @@ figure {
 
 
 
-.clinic-info-logo .logo {
+.clinic-info-logo .logo{
     margin: 10px 0 0 0;
     padding: 0px 0px 10px 50px;
     min-width: 200px;
@@ -267,6 +279,15 @@ main{
     border-radius: 30px;
     margin-left: 10%;
 }
+
+@media only screen and (min-width: 1500px) {
+    .main-div, .home-banner {
+        width: 94%;
+        height: 800px;
+        margin: 0 3%;
+    }
+}
+
 
 @media only screen and (max-width: 1150px) {
     .sub-main-div {
@@ -620,7 +641,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .keepumov div {
@@ -630,6 +651,7 @@ main{
     background-size: cover;
     border-radius: 20px;
     box-shadow: 0px 0px 2px rgb(150, 147, 147);
+    
 }
 
 .keepumov1 {
@@ -661,7 +683,169 @@ main{
     }
 }
 
-
-
 /* end of keepumov */
 
+
+
+
+
+
+/* start of clinic-info-timing-address */
+.clinic-info-timing-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 100px;
+}
+
+.clinic-info-container:nth-child(2) {
+    background-color: rgb(124, 117, 247)
+}
+
+.clinic-info-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: #9690FF;
+    width: 27%;
+    padding: 3rem;
+}
+
+
+.clinic-info-container img {
+    width: 30px;
+    height: auto;
+    margin: 0 0 5px 0;
+}
+
+.clinic-info-container .sub {
+    font-size: .9rem;
+    color: #000000;
+    font-weight: 500;
+}
+
+.clinic-info-container .main {
+    font-size: 1rem;
+    font-weight: 650;
+    color: #1e1d1d;
+    
+}
+
+@media only screen and (max-width: 1160px) {
+    .clinic-info-container{
+        padding: 2.2rem;
+    }
+
+    .clinic-info-container .sub {
+        font-size: .75rem;
+    }
+
+    .clinic-info-container .main {
+        font-size: .85rem;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    .clinic-info-container{
+        padding: 1.7rem;
+    }
+
+    .clinic-info-container .sub {
+        font-size: .75rem;
+    }
+
+    .clinic-info-container .main {
+        font-size: .85rem;
+    }
+}
+
+
+@media only screen and (max-width: 890px) {
+
+    .clinic-info-timing-address {
+        flex-wrap: wrap;
+        
+    }
+    .clinic-info-container{
+        width: 60%;
+        height: 200px;
+        
+    }
+
+
+    .clinic-info-container .sub {
+        font-size: .9rem;
+        color: #000000;
+        font-weight: 500;
+    }
+    
+    .clinic-info-container .main {
+        font-size: 1rem;
+        
+    }
+}
+
+
+@media only screen and (max-width: 890px) {
+
+    .clinic-info-timing-address {
+        flex-wrap: wrap;
+        
+    }
+    .clinic-info-container{
+        width: 60%;
+        height: 200px;
+        
+    }
+
+
+    .clinic-info-container .sub {
+        font-size: .9rem;
+        color: #000000;
+        font-weight: 500;
+    }
+    
+    .clinic-info-container .main {
+        font-size: 1rem;
+        
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .clinic-info-timing-address {
+        flex-wrap: wrap;
+        
+    }
+    .clinic-info-container{
+        width: 80%;
+        height: 200px;
+        
+    }
+
+
+    .clinic-info-container .sub {
+        font-size: .9rem;
+        color: #000000;
+        font-weight: 500;
+    }
+    
+    .clinic-info-container .main {
+        font-size: 1rem;
+        
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .clinic-info-container {
+        height: 175px;
+    }
+}
+
+/* end of clinic-info-timing-address */
