@@ -849,3 +849,70 @@ main{
 }
 
 /* end of clinic-info-timing-address */
+
+
+/* Start of user form */
+.user-form-section {
+    background-color: #ffffff;
+    /* backdrop-filter: blur(10px); */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    flex-direction: column;
+    gap: 30px;
+    top: -1000;
+    left: -1000;
+    z-index: 1;
+
+}
+
+.user-form {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(142, 141, 141);
+    
+}
+
+.user-form input {
+    padding: 10px 30px;
+    height: 40px;
+    margin: 5px 0 20px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(142, 141, 141);
+    font-size: 1rem;
+    background-color: #f0eeee;
+}
+
+.user-form input:focus {
+    border: 1px solid rgb(65, 65, 65);
+    outline: none;
+}
+
+.user-form label {
+    color: #858585;
+    font-size: .9rem;
+}
+
+.user-form button {
+    height: 30px;
+    
+    background-color: #9690FF;
+    font-size: medium;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.user-form * {
+    display: block;
+    width: 30vw;
+    /* height: 30px; */
+    
+}
+
+
+/* End of user form */
