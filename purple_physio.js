@@ -84,34 +84,92 @@ document.addEventListener('scroll', apply_shadow);
 
 
 
-
-
-
-
-const user_form = document.querySelector('.user-form')
-
-const url = 'https://script.google.com/macros/s/AKfycbzq4S4vBVv6kUsP-0HSjI3FoyV8OZavZK7RwWj1Atj_wMSn1Kg7Pr26HZyoVY2Tg9GK/exec'
-
-user_form.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const form_data = new FormData(event.target);
-
-    fetch(url, {method : 'POST', body : form_data})
-    
-    .then(() => {window.location.reload(); })
-    
-
-})
-
-
-
-
-const book_appointment_button = document.querySelector('.book-appoinment');
+const book_appointment_buttons = document.querySelectorAll('.book-appoinment');
+const book_appointment_button_arr = Array.from(book_appointment_buttons)
 const user_form_section = document.querySelector('.user-form-section');
 
 let user_form_children = document.querySelectorAll('.user-form-child')
 let user_form_children_arr = Array.from(user_form_children)
+
+const user_form = document.querySelector('.user-form')
+const user_form_button = document.querySelector('.user-form-button')
+
+
+/* select success and failure alert message divs */
+const success = document.querySelector('.success')
+const failure = document.querySelector('.failure')
+
+
+const user_form_input = document.querySelectorAll('.user-form-input')
+
+const url = 'https://script.google.com/macros/s/AKfycbzq4S4vBVv6kUsP-0HSjI3FoyV8OZavZK7RwWj1Atj_wMSn1Kg7Pr26HZyoVY2Tg9GK/exec'
+
+
+/* when form get submitted */
+user_form.addEventListener('submit', (event) => {
+
+    event.preventDefault();
+
+    /* disable the button so user can't spam the button */
+    user_form_button.disabled = true
+
+    const form_data = new FormData(event.target);
+
+
+    /* submit the data tto google sheet */
+    fetch(url, {method : 'POST', body : form_data})
+
+    .then(user_form_input.forEach( input => {
+        input.value = ''
+    }))
+    
+    .then(respoce => {
+        if (respoce.status == 200){
+            
+            /* enable the button */
+            user_form_button.disabled = false;
+
+            /* Hide user form section */
+            user_form_section.style.top = '-1000px';
+            user_form_section.style.left = '-1000px';
+            user_form_section.setAttribute('aria-active', 'false')
+            document.body.style.overflowY = ''
+            document.body.style.paddingRight = '0'
+
+            /* Show success message */
+            success.style.display = 'block'
+        }    
+        else {
+            /* enable the button */
+            user_form_button.disabled = false;
+
+            /* Hide user form section */
+            user_form_section.style.top = '-1000px';
+            user_form_section.style.left = '-1000px';
+            user_form_section.setAttribute('aria-active', 'false')
+            document.body.style.overflowY = ''
+            document.body.style.paddingRight = '0'
+
+            /* Show success message */
+            failure.style.display = 'block'
+
+        }
+
+        /* After time out hide the alert */
+        setTimeout(() => {
+            success.style.display = 'none';
+            failure.style.display = 'none';
+        }, 4000);
+    })
+
+
+
+
+    
+
+    
+
+})
 
 
 document.addEventListener('click', (event) => {
@@ -119,20 +177,23 @@ document.addEventListener('click', (event) => {
 
     let aria_status = user_form_section.getAttribute('aria-active')
     console.log('called')
+    
 
     if (event.target != user_form && !user_form_children_arr.includes(event.target) && aria_status == 'true' ){
         user_form_section.style.top = '-1000px';
         user_form_section.style.left = '-1000px';
         user_form_section.setAttribute('aria-active', 'false')
         document.body.style.overflowY = ''
+        document.body.style.paddingRight = '0'
 
         console.log('close')
     }
-    else if(event.target == book_appointment_button && aria_status == 'false'){
+    else if(book_appointment_button_arr.includes(event.target) && aria_status == 'false'){
         user_form_section.style.top = '0';
         user_form_section.style.left = '0';
         user_form_section.setAttribute('aria-active', 'true')
         document.body.style.overflowY = 'hidden'
+        document.body.style.paddingRight = '16px'
         console.log('open')
     }
 })

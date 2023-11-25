@@ -8,6 +8,15 @@
     <title>Purple Physio</title>
 </head>
 <body>
+
+    <div class="alert success">
+        Your appointment has been booked successfully
+    </div>
+
+    <div class="alert failure">
+        Some thing wrong happened
+    </div>
+
     <section class="clinic-info-logo">
         <div class="logo">
             <!-- <h4><span class="purple">Purple</span> Physio</h4> -->
@@ -311,18 +320,23 @@
 
 
 <section class="user-form-section" aria-active="false">
-    <img src="close.png" class="close-img" alt="LOGO" width="15px" height="15px">
+    <!-- <img src="close.png" class="close-img" alt="LOGO" width="15px" height="15px"> -->
     <form class="user-form">
             <h1>Book appointment</h1>
             <label class="user-form-child" for="Email">Email</label>
-            <input class="user-form-child" name="Email" type="email" autofocus required autocomplete="off">
+            <input class="user-form-child user-form-input" name="Email" type="email" autofocus required autocomplete="off">
             <label class="user-form-child" for="Name">Name</label>
-            <input class="user-form-child" name="Name" type="text"  required autocomplete="off">
+            <input class="user-form-child user-form-input" name="Name" type="text"  required autocomplete="off">
             <label class="user-form-child" for="Phone number">Phone Number</label>
-            <input class="user-form-child" type="numeric" name="Phone number"  required autocomplete="off">
-            <button class="user-form-child" type="submit">Send</button>
+            <input class="user-form-child user-form-input" type="numeric" name="Phone number"  required autocomplete="off">
+            <button class="user-form-child user-form-button" type="submit">Send</button>
     </form>
 </section>
+
+<button class="book-appoinment bottom-right">Book Appointment</button>
+
+
+
 
         <!-- <p>
             World-Class Physiotherapy at Clinic, Home or Online

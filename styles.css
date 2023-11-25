@@ -10,6 +10,64 @@ body {
     background-color: #ffffff;
     
 }
+
+
+.alert {
+    padding: 1rem;
+    width: 50%;
+    position: fixed;
+    margin: 20px 0;
+    top: 0;
+    left: 25%;
+    display: none;
+    z-index: 3;
+    border-radius: 10px;
+    text-align: center;  
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .alert{
+        width: 70%;
+        left: 15%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .alert{
+        width: 95%;
+        left: 2.5%;
+        font-size: small;
+
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .alert{
+        width: 95%;
+        left: 2.5%;
+        font-size: x-small;
+
+    }
+}
+
+
+
+
+.success {
+    background: linear-gradient(to right, #a9ffbc 0%, #82e392, #acffbe 100%);
+}
+
+.failure {
+    margin: 80px 0;
+    background: linear-gradient(to right, #ff99a9 0%, #ff4d59, #ff99a8 100%);
+}
+
+
+
+
 /* span element in the logo */
 .purple {
     color: #a17af0;
@@ -23,7 +81,8 @@ figure {
 
 .book-appoinment {
     padding: .8rem;
-    background-color: #a17af0;
+    /* background-color: #a17af0; */
+    background: linear-gradient(to right, #ba97ff 0%, #ab82ff, #ba97ff 100%);
     color: white;
     border: none;
     border-radius: 5px;
@@ -853,8 +912,9 @@ main{
 
 /* Start of user form */
 .user-form-section {
-    background-color: #ffffff;
-    /* backdrop-filter: blur(10px); */
+    /* background-color: #ffffff; */
+    
+    backdrop-filter: brightness(70%);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -871,24 +931,30 @@ main{
 
 .user-form {
     background-color: #ffffff;
-    padding: 50px;
+    padding: 50px 50px 70px 50px;
     border-radius: 10px;
-    border: 1px solid rgb(142, 141, 141);
+    box-shadow: 0 0 5px rgba(98, 95, 95, 0.5);
+    
     
 }
 
+.user-form h1 {
+    margin-bottom: 30px;
+}
+
 .user-form input {
-    padding: 10px 30px;
+    padding: 10px 10px;
     height: 40px;
     margin: 5px 0 20px 0;
-    border-radius: 5px;
-    border: 1px solid rgb(142, 141, 141);
+    border-radius: 10px;
+    border: none;
     font-size: 1rem;
-    background-color: #f0eeee;
+    /* background-color: rgb(144, 202, 255); */
+    background-color: #c1bcff;
 }
 
 .user-form input:focus {
-    border: 1px solid rgb(65, 65, 65);
+    /* border: 1px solid rgb(65, 65, 65); */
     outline: none;
 }
 
@@ -898,13 +964,17 @@ main{
 }
 
 .user-form button {
-    height: 30px;
-    
+    height: 40px;
     background-color: #9690FF;
     font-size: medium;
     border: none;
     padding: 5px;
     border-radius: 5px;
+    margin: 30px 0 0 0;
+}
+
+.user-form button:hover {
+    cursor: pointer;
 }
 
 .user-form * {
@@ -916,3 +986,15 @@ main{
 
 
 /* End of user form */
+
+
+
+/* Book appointment button bottom right */
+
+.bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 30px 30px 0;
+}
+
