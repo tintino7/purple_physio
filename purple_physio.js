@@ -40,7 +40,7 @@ const handleWindowResize = () => {
     const currentWidth = window.innerWidth;
     let menu_status = document.querySelector('nav');
 
-    // Add your logic based on the current window width
+    
     if (currentWidth > 750) {
         document.querySelector('.menu').style.display = 'none'
         document.querySelector('.is-mobile').style.display = 'none'
@@ -193,7 +193,11 @@ document.addEventListener('click', (event) => {
         user_form_section.style.left = '0';
         user_form_section.setAttribute('aria-active', 'true')
         document.body.style.overflowY = 'hidden'
-        document.body.style.paddingRight = '16px'
+
+        if (window.innerWidth > 1000){
+            document.body.style.paddingRight = '18px'
+        }
+        
         console.log('open')
     }
 })

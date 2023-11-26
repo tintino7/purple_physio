@@ -12,6 +12,12 @@ body {
 }
 
 
+
+
+
+
+
+/* Start of alert */
 .alert {
     padding: 1rem;
     width: 50%;
@@ -61,9 +67,16 @@ body {
 }
 
 .failure {
-    margin: 80px 0;
+    /* margin: 80px 0; */
     background: linear-gradient(to right, #ff99a9 0%, #ff4d59, #ff99a8 100%);
 }
+
+
+/* End of alert */
+
+
+
+
 
 
 
@@ -82,7 +95,7 @@ figure {
 .book-appoinment {
     padding: .8rem;
     /* background-color: #a17af0; */
-    background: linear-gradient(to right, #ba97ff 0%, #ab82ff, #ba97ff 100%);
+    background: linear-gradient(to right, #b28cfe 0%, #ab82ff, #b28cfe 100%);
     color: white;
     border: none;
     border-radius: 5px;
@@ -377,13 +390,15 @@ main{
     border-radius: 5px;
     color: white;
     font-weight: 500;
-    background-color: #a17af0;
+    /* background-color: #a17af0; */
+    background: linear-gradient(to right, #b28cfe 0%, #ab82ff, #b28cfe 100%);
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     display: block;
 }
 
-.main-button:hover {
+.main-button:hover, .book-appoinment:hover {
     cursor: pointer;
     transform: scale(1.03);
     /* box-shadow: 0px 0px 2px #424242aa; */
@@ -933,7 +948,7 @@ main{
     background-color: #ffffff;
     padding: 50px 50px 70px 50px;
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(98, 95, 95, 0.5);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     
     
 }
@@ -985,16 +1000,33 @@ main{
 }
 
 
+@media only screen and (max-width: 400px) {
+    .user-form * {
+        width: 65vw;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    .user-form * {
+        width: 65vw;
+    }
+}
+
 /* End of user form */
 
 
 
 /* Book appointment button bottom right */
 
-.bottom-right {
+/* .bottom-right {
     position: fixed;
     bottom: 0;
     right: 0;
     margin: 0 30px 30px 0;
-}
+    background: url(images/book-appointment.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+} */
 
