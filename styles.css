@@ -1019,44 +1019,166 @@ main{
 
 /* Start of footer section */
 
-footer {
+/* footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(240, 240, 240);
-    height: 150px;
+    background-color: rgb(244, 244, 244);
+    height: 350px;
     flex-wrap: wrap ;
 
 }
+ */
 
-
-.quote {
+/* .quote {
     width: 350px;
-    text-align: center;
+    text-align: center; */
     /* font-weight: 550; */
-    padding: 1rem;
+    /* padding: 1rem; */
     /* border-bottom: 1px solid rgb(110, 110, 110); */
-    color: #555555;
+    /* color: #555555;
     line-height: 1.25;
 }
 
 footer div {
     text-align: center;
-    width: 350px;
+    width: 200px;
     
     
 }
 
-footer div div{
+
+.gmap iframe {
+    width: 200px;
+    height: 200px;
+    border: none;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+footer div div{ */
     /* background-color: #9264ef; */
-    padding: 1rem;
+    /* padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     width: 100%;
+} */
+
+
+/* .twitter {
+    width: 17px;
+    height: auto;
 }
 
+.insta {
+    width: 17px;
+    height: auto;
+}
+
+.facebook {
+    width: 22px;
+    height: auto;
+}
+
+.youtube {
+    width: 26px;
+    height: auto;
+}
+
+.flaticon {
+    width: 26px;
+    height: auto;
+}
+
+.freepik, .flaticon{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+} */
+
+
+/* @media only screen and (max-width: 1070px) {
+    footer {
+        height: 300px;
+    }
+
+    footer div, .quote {
+        width: 200px;
+        
+    }
+
+    .gmap {
+        width: 80%;
+    }
+
+    .gmap iframe {
+        width: 100%;
+        height: 200px;
+    }
+} */
+
+/* @media only screen and (max-width: 630px) {
+    footer {
+        height: 350px;
+        justify-self: center;
+    }
+
+    footer div, .quote {
+        width: 80%;
+        
+    }
+} */
+
+
+/* End of footer section */
+
+
+
+
+/* start of footer */
+footer {
+    background-color: rgb(244, 244, 244);
+    height: 350px;
+    padding: 1.5rem;
+}
+
+
+.quote {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+
+footer section:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.social div, .attributions div, .gmap div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.social, .attributions, .gmap {
+    /* background-color: #3d3845; */
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
 
 .twitter {
     width: 17px;
@@ -1087,32 +1209,67 @@ footer div div{
     text-decoration: none;
     color: black;
     font-size: small;
+} 
+
+.gmap div iframe{
+    width: 100%;
+    height: 175px;
+    border: 1px solid rgb(154, 154, 154);
+    box-shadow: 0 0 4px rgb(150, 150, 150);
+    border-radius: 10px;
 }
 
 
-@media only screen and (max-width: 1070px) {
-    footer {
-        height: 200px;
-    }
 
-    footer div, .quote {
+.social div *:hover, .attributions div *:hover, .gmap div iframe:hover {
+    transform: scale(1.05);
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .social, .attributions{
         width: 200px;
-        
+        margin: 0 0 4rem 0;
+        /* background-color: #1e1d1d; */
     }
-}
 
-@media only screen and (max-width: 630px) {
+    footer section:nth-child(2) {
+        /* background-color: #82e392; */
+        margin: 2rem 0;
+    }
+
+    .gmap {
+        width: 700px;
+    }
+
     footer {
-        height: 300px;
-        justify-self: center;
+        height: 450px;
     }
 
-    footer div, .quote {
-        width: 80%;
-        
+    .gmap div {
+        width: 200px;
     }
+
+
 }
 
 
-/* End of footer section */
 
+
+@media only screen and (max-width: 750px) {
+
+    .social, .attributions, .gmap { 
+        width: 100%;
+    }
+
+    footer {
+        height: 600px;
+    }
+
+    .gmap {
+        order: 1;
+    }
+
+}
+/* End of footer */
