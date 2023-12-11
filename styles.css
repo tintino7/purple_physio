@@ -11,7 +11,9 @@ body {
     
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 
 
@@ -92,7 +94,7 @@ figure {
     gap: 1rem;
 }
 
-.book-appoinment {
+.book-appoinment , .book-appoinment-contact-us{
     padding: .8rem;
     /* background-color: #a17af0; */
     background: linear-gradient(to right, #b28cfe 0%, #ab82ff, #b28cfe 100%);
@@ -103,7 +105,7 @@ figure {
     
 }
 
-.book-appoinment:hover {
+.book-appoinment:hover, .book-appoinment-contact-us:hover {
     cursor: pointer;
 }
 
@@ -938,14 +940,13 @@ main{
     position: fixed;
     flex-direction: column;
     gap: 30px;
-    top: -1000;
-    left: -1000;
+    top: -1000px;
+    left: -1000px;
     z-index: 1;
 
 }
 
 .user-form {
-    background-color: #ffffff;
     padding: 50px 50px 70px 50px;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
@@ -955,6 +956,11 @@ main{
 
 .user-form h1 {
     margin-bottom: 30px;
+    
+}
+
+.user-form label, .user-form h1 {
+    width: 100%;
 }
 
 .user-form input {

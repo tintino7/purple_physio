@@ -1,0 +1,129 @@
+
+
+
+body {
+    height: 300vh;
+}
+
+nav {
+    margin-bottom: 0px;
+}
+
+
+/* Start of contact us image */
+
+.contact-us {
+    background: url(images/stethescope.jpg);
+    height: 250px;
+    background-size: cover;
+    background-position: 50%;
+}   
+
+.contact-us-img {
+    background-color: #9690ffaf;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-img h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .contact-us {
+        height: 200px;
+    }
+
+    .contact-us-img h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width: px) {
+    .contact-us-img h1{
+        font-size: 3rem;
+    }
+}
+
+/* End of contact us image */
+
+
+
+/* Start of address form */
+
+.address-form {
+    margin: 50px 0 0 0;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.c-address, .c-form {
+    width: 45%;
+    height: 90%;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 5px;
+}
+
+
+.c-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-address div * {
+    margin: 10px;
+    font-weight: 550;
+    color: rgb(88, 86, 86);
+}
+
+.c-address div h1 {
+    color: rgb(46, 46, 46);
+}
+
+.user-form-input {
+    background-color: rgb(216, 240, 255) !important;
+    
+}
+
+.user-form-input, .user-form-button {
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .c-address, .c-form {
+        width: 90%;
+        height: auto;
+        
+    }
+
+    .c-address {
+        padding: 2rem;
+    }
+
+
+    .user-form {
+        padding: 2rem;
+    }
+
+    .address-form {
+        margin: 20px 0 0 0;
+        gap: 1rem;
+    }
+}
+/* End of address form */
