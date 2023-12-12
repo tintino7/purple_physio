@@ -126,15 +126,20 @@ user_form.addEventListener('submit', (event) => {
     .then(respoce => {
         if (respoce.status == 200){
             
-            /* enable the button */
-            user_form_button.disabled = false;
+            if (user_form.id == 'index'){
 
-            /* Hide user form section */
-            user_form_section.style.top = '-1000px';
-            user_form_section.style.left = '-1000px';
-            user_form_section.setAttribute('aria-active', 'false')
-            document.body.style.overflowY = ''
-            document.body.style.paddingRight = '0'
+                /* enable the button */
+                user_form_button.disabled = false;
+
+                /* Hide user form section */
+                user_form_section.style.top = '-1000px';
+                user_form_section.style.left = '-1000px';
+                user_form_section.setAttribute('aria-active', 'false')
+                document.body.style.overflowY = ''
+                document.body.style.paddingRight = '0'
+
+            }
+            
 
             /* Show success message */
             success.style.display = 'block'

@@ -1,10 +1,5 @@
 
 
-
-body {
-    height: 300vh;
-}
-
 nav {
     margin-bottom: 0px;
 }
@@ -38,7 +33,7 @@ nav {
 
 @media only screen and (max-width: 600px) {
     .contact-us {
-        height: 200px;
+        height: 150px;
     }
 
     .contact-us-img h1 {
@@ -49,10 +44,15 @@ nav {
 
 
 
-@media only screen and (max-width: px) {
+@media only screen and (max-width: 400px) {
     .contact-us-img h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
+
+    .contact-us {
+        height: 100px;
+    }
+    
 }
 
 /* End of contact us image */
@@ -63,7 +63,7 @@ nav {
 
 .address-form {
     margin: 50px 0 0 0;
-    height: 500px;
+    height: 530px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -124,6 +124,33 @@ nav {
     .address-form {
         margin: 20px 0 0 0;
         gap: 1rem;
+        height: auto;
     }
 }
+
+
+@media only screen and (max-width: 900px) {
+
+}
 /* End of address form */
+
+
+
+
+/* Start of gmap contact us */
+
+.gmap-contact_us {
+    width: 100%;
+    height: 500px;
+    margin: 40px 0 ;
+}
+
+.gmap-contact_us iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* End of gmap contact us */
