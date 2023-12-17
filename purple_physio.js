@@ -4,6 +4,8 @@ function open_menu (){
 
     is_mobile.style.display = 'block'
     is_mobile.style.position = 'fixed'
+
+    is_mobile.classList.toggle('collapsed');
     
     document.querySelector('.close').style.display = 'inline'
     document.querySelector('.menu').style.display = 'none'
@@ -18,6 +20,7 @@ function close_menu(){
 
     is_mobile.style.display = 'none'
     is_mobile.style.position = 'static'
+    is_mobile.classList.toggle('collapsed');
    
     document.querySelector('.menu').style.display = 'inline'
     document.querySelector('.close').style.display = 'none'
@@ -128,21 +131,30 @@ user_form.addEventListener('submit', (event) => {
             
             if (user_form.id == 'index'){
 
-                /* enable the button */
-                user_form_button.disabled = false;
+                /* Plays the animation */
+                user_form.classList.toggle('collapsed');
 
-                /* Hide user form section */
-                user_form_section.style.top = '-1000px';
-                user_form_section.style.left = '-1000px';
-                user_form_section.setAttribute('aria-active', 'false')
-                document.body.style.overflowY = ''
-                document.body.style.paddingRight = '0'
+                setTimeout(() => {
+                    /* Hide user form section after .5sec so animation can play*/
+                    user_form_section.style.top = '-1000px';
+                    user_form_section.style.left = '-1000px';
+                    user_form_section.setAttribute('aria-active', 'false')
+                    document.body.style.overflowY = ''
+                    document.body.style.paddingRight = '0'   
+                }, 490);
 
+                
             }
             
+            /* enable the button */
+            user_form_button.disabled = false;
 
             /* Show success message */
-            success.style.display = 'block'
+            success.classList.toggle('collapsed');
+            setTimeout(() => {
+                success.classList.toggle('collapsed');
+                
+            }, 4000);
         }    
         else {
             /* enable the button */
@@ -156,15 +168,17 @@ user_form.addEventListener('submit', (event) => {
             document.body.style.paddingRight = '0'
 
             /* Show success message */
-            failure.style.display = 'block'
+            failure.classList.toggle('collapsed');
+
+            setTimeout(() => {
+                failure.classList.toggle('collapsed');
+                
+            }, 4000);
 
         }
 
         /* After time out hide the alert */
-        setTimeout(() => {
-            success.style.display = 'none';
-            failure.style.display = 'none';
-        }, 4000);
+        
     })
 
 
@@ -185,24 +199,28 @@ document.addEventListener('click', (event) => {
     
 
     if (event.target != user_form && !user_form_children_arr.includes(event.target) && aria_status == 'true' ){
-        user_form_section.style.top = '-1000px';
-        user_form_section.style.left = '-1000px';
-        user_form_section.setAttribute('aria-active', 'false')
-        document.body.style.overflowY = ''
-        document.body.style.paddingRight = '0'
 
-        console.log('close')
+        user_form.classList.toggle('collapsed');
+        setTimeout(() => {
+            user_form_section.style.top = '-1000px';
+            user_form_section.style.left = '-1000px';
+            user_form_section.setAttribute('aria-active', 'false')
+            document.body.style.overflowY = ''
+            document.body.style.paddingRight = '0'
+            
+        }, 500);
+        
     }
     else if(book_appointment_button_arr.includes(event.target) && aria_status == 'false'){
         user_form_section.style.top = '0';
         user_form_section.style.left = '0';
         user_form_section.setAttribute('aria-active', 'true')
         document.body.style.overflowY = 'hidden'
+        user_form.classList.toggle('collapsed');
 
         if (window.innerWidth > 1000){
             document.body.style.paddingRight = '18px'
         }
         
-        console.log('open')
     }
 })
