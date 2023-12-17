@@ -5,7 +5,7 @@ function open_menu (){
     is_mobile.style.display = 'block'
     is_mobile.style.position = 'fixed'
 
-    is_mobile.classList.toggle('collapsed');
+   console.log('open')
     
     document.querySelector('.close').style.display = 'inline'
     document.querySelector('.menu').style.display = 'none'
@@ -20,7 +20,9 @@ function close_menu(){
 
     is_mobile.style.display = 'none'
     is_mobile.style.position = 'static'
-    is_mobile.classList.toggle('collapsed');
+    
+    
+   console.log('closed')
    
     document.querySelector('.menu').style.display = 'inline'
     document.querySelector('.close').style.display = 'none'
@@ -168,6 +170,7 @@ user_form.addEventListener('submit', (event) => {
             document.body.style.paddingRight = '0'
 
             /* Show success message */
+            
             failure.classList.toggle('collapsed');
 
             setTimeout(() => {
@@ -195,7 +198,7 @@ document.addEventListener('click', (event) => {
     
 
     let aria_status = user_form_section.getAttribute('aria-active')
-    console.log('called')
+    
     
 
     if (event.target != user_form && !user_form_children_arr.includes(event.target) && aria_status == 'true' ){
