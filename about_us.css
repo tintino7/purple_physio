@@ -1,0 +1,206 @@
+
+/* Start of contact us image */
+
+/* for the image that says about us */
+
+.contact-us {
+    background: url(images/contact_us.jpg);
+    height: 250px;
+    background-size: cover;
+    background-position: 50%;
+    
+}   
+
+.contact-us-img {
+    background-color: #90b5ff50;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-img h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .contact-us {
+        height: 150px;
+    }
+
+    .contact-us-img h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+    .contact-us-img h1{
+        font-size: 2rem;
+    }
+
+    .contact-us {
+        height: 100px;
+    }
+    
+}
+
+/* End of contact us image */
+
+
+/* Start of About us hero */
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    margin: 70px 0;
+    flex-wrap: wrap;
+}
+
+
+.hero figure img{
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: auto;
+}
+
+.hero div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+}
+
+.hero div h1 {
+    color: rgb(43, 43, 43);
+}
+
+.hero div p {
+    color: rgb(86, 86, 86);
+    font-size: 1.1rem;
+    
+}
+
+.hero div button {
+    width: 150px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #6babff 0%, #65acee, #6babff  100%);
+}
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+    .hero div {
+        width: 70%;
+        /* text-align: center; */
+        /* align-items: center; */
+        gap: 30px;
+    }
+
+    .hero {
+        gap: 100px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero div {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero figure img {
+        width: 300px;
+        height: auto;
+    }
+
+    .hero {
+        gap: 80px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hero figure img{
+        width: 275px;
+    }
+    .hero div p {
+        
+        font-size: 1rem;
+        
+    }
+}
+
+
+@media only screen and (min-width: 1900px) {
+    .hero {
+        width: 70%;
+        margin: 70px auto;
+    }
+}
+
+
+
+
+/* End of About us hero */
+
+
+
+
+/* Start of courousal */
+
+.container, .container-medium{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.container-child , .container-child-medium{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 300px;
+}
+
+.container-child {
+    width: 30%;
+    padding: 5%;
+}
+
+.container-child-medium {
+    width: 90%;
+    padding: 10%;    
+}
+
+
+.courousal , .courousal-medium{
+    margin: 20px 0 70px 0 ;
+}
+
+.reviewer {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+
+
+/* Courouasal for medium and small screen */
+
+
+
+/* End of courousal */
