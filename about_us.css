@@ -160,6 +160,40 @@
 
 /* Start of courousal */
 
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 400px; /* Set a height for the container to make it visible */
+}
+
+.carousel-slide {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    /* transition: transform 1s ease; */
+    
+    /* background-color: lightblue; /* Set a background color for visibility */ 
+}
+
+.hide {
+    transform: translateX(100%);
+}
+
+
+
+
+
+.courousal-medium {
+    display: none;
+}
+
+
+
+
 .container, .container-medium{
     display: flex;
     justify-content: center;
@@ -197,10 +231,32 @@
     margin: 10px 0;
 }
 
+@media only screen and (max-width: 1300px) {
+    .courousal-medium {
+        display: block;
+    }
 
+    .corousal-large {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .courousal-medium {
+        padding: 0;
+    }
+
+    .container-child-medium {
+        height: 250px;
+    }
+}
 
 /* Courouasal for medium and small screen */
 
 
 
 /* End of courousal */
+
+
+
