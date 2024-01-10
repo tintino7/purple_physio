@@ -1,0 +1,127 @@
+/* Start of contact us image */
+
+/* for the image that says about us */
+
+.contact-us {
+    background: url(images/contact_us.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: 50%;
+    
+}   
+
+.contact-us-img {
+    background-color: #90b5ff50;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-img h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .contact-us {
+        height: 150px;
+    }
+
+    .contact-us-img h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+    .contact-us-img h1{
+        font-size: 2rem;
+    }
+
+    .contact-us {
+        height: 100px;
+    }
+    
+}
+
+/* End of contact us image */
+
+/* Start of salient features */
+.features-heading {
+    text-align: center;
+    color: rgb(72, 71, 71);
+    margin: 40px;
+}
+
+
+
+.salient-features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    margin: 40px 0;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width:200px;
+    margin: 30px 0;
+    /* background-color: blueviolet; */
+    height: auto;
+}
+
+.feature img {
+    width: 100px;
+    height: auto;
+    
+}
+
+.feature h3 {
+    /* width: 50%; */
+    text-align: center;
+    font-size: medium;
+    /* background-color: aqua; */
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .feature {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .feature {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 459px) {
+    .feature {
+        width: 320px;
+    }
+
+    .salient-features{
+        gap: 30px;
+    }
+
+    .features-heading {
+        font-size: 1.4rem;
+    }
+}
+
+/* End of salient features */

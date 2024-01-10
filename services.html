@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services.css">
+    <title>Purple Physio</title>
+</head>
+<body>
+
+    <div class="alert success">
+        Your appointment has been booked successfully
+    </div>
+
+    <div class="alert failure">
+        Some thing wrong happened
+    </div>
+
+    <section class="clinic-info-logo">
+        <div class="logo">
+            <!-- <h4><span class="purple">Purple</span> Physio</h4> -->
+            <button class="book-appoinment" type="submit">Book an appoinment</button>
+        </div>
+        <div class="clinic-info">
+            <img src="images/time.png" alt="" width="18px" height="18px">
+            <div class="timing clinic-info-sub">
+                <p class="main">
+                    Mon - Fri: 08:00AM - 10:00PM
+                </p>
+                <p class="sub">
+                    Saturday and Sunday - Closed
+                </p>
+                
+            </div>
+            <img src="images/telephone.png" alt="" width="18px" height="18px">
+            <div class="ph-number clinic-info-sub">
+                <p class="main">
+                    +91 86672 25421
+                </p>
+                <p class="sub">
+                    Contact Us For Help
+                </p>
+            </div>
+            <img src="images/pin.png" alt="" width="18px" height="18px">
+            <div class="address clinic-info-sub">
+                <p class="main">
+                    VOC Street, CIT Nagar
+                </p>
+                <p class="sub">
+                    T Nagar, Chennai - 630108
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Start of nav bar -->
+    <nav aria-open = 'false'>
+        <!-- Logo goes here -->
+        <figure>
+            <img class="logo" src="P.png" alt="LOGO" width="20px" height="20px" loading="lazy">
+            <h4><span class="purple">Purple</span> Physio</h4>
+        </figure>
+
+        <!-- All the different nav items that consist nav links  -->
+        <ul class="nav-ul">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about_us.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact us</a></li>
+            <!-- Hamburger manu button -->
+            <li class="nav-item-menu"><button class="menu" type="menu"><img src="menu.png" class="menu-img" alt="LOGO" width="15px" height="15px"></button><button class="close" type="menu"><img src="close.png" class="close-img" alt="LOGO" width="15px" height="15px"></button></li>
+        </ul>
+    </nav>
+
+
+    <!-- Only for mobile screen when width less than < 600px -->
+    <div class="is-mobile">
+
+        <!-- Cross close button -->
+        
+        <ul class="nav-ul-mobile">
+            <li class="nav"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav"><a class="nav-link" href="about_us.html">About</a></li>
+            <li class="nav"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav"><a class="nav-link" href="contact_us.html">Contact us</a></li>
+            
+        </ul>
+    </div>
+
+    <main>
+
+        <section class="contact-us">
+            <div class="contact-us-img">
+                <h1>Our services</h1>
+            </div>
+        </section>
+
+        <h1 class="features-heading">
+           Our Salient Features
+        </h1>
+        
+
+        <section class="salient-features">
+            <div class="feature">
+                <img src="images/equipment.png" alt="Well Equipped" height="200" width="200" loading="lazy">
+                <h3>
+                    Equipped with latest Modalities
+                </h3>
+            </div>
+
+            <div class="feature">
+                <img src="images/manualcheckup.png" alt="manual checkup" height="200" width="200" loading="lazy">
+                <h3>
+                    Manual therapy techniques
+                </h3>
+            </div>
+
+            <div class="feature">
+                <img src="images/medicalhistory.png" alt="Medical History" height="200" width="200" loading="lazy">
+                <h3>
+                    Through history taking and physical assessment
+                </h3>
+            </div>
+
+            <div class="feature">
+                <img src="images/diagnosis.png" alt="Diagnosis" height="200" width="200" loading="lazy">
+                <h3>
+                    Diagnosis
+                </h3>
+            </div>
+
+            <div class="feature">
+                <img src="images/treatment.png" alt="Treatment" height="200" width="200" loading="lazy">
+                <h3>
+                    Treatment and Management
+                </h3>
+            </div>
+        </section>
+    </main>
+
+<script src="purple_physio.js"></script>
+</body>
+</html>

@@ -214,9 +214,8 @@ nav {
     position: sticky;
     top: 0;
     background-color: rgb(255, 255, 255);
-    /* border: 1px solid black; */
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); */
-    /* box-shadow: 0 0 2px 2px; */
+    /* background-color: hsla(0,0%,100%,.2)!important;
+    backdrop-filter: saturate(500%) blur(20px); */
 }
 
 /* nav-item == all the <li/> consisting nav links and nav-item-menu == <li/> with Hamburger menu*/ 
@@ -231,7 +230,7 @@ nav {
 /* Buttons with Menu and Close  */
 .menu:hover,.menu:active, .close:hover, .close:active, .nav-ul:hover, .nav-ul:active /* cause of weird action */ {
     cursor: pointer;
-    background-color: white;
+    /* background-color: white; */
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -253,7 +252,8 @@ nav {
 
 .menu, .close {
     display: none;
-    background-color: rgb(252, 252, 252);
+    /* background-color: rgb(252, 252, 252); */
+    background-color: transparent;
     border: none;
 }
 
@@ -958,7 +958,8 @@ main{
     background-color: rgb(253, 254, 255);
     padding: 50px 50px 70px 50px;
     border-radius: 10px;
-    
+    /* background-color: #9690ff98 !important;
+    backdrop-filter: saturate(500%) blur(20px); */
     
 }
 
@@ -982,6 +983,7 @@ main{
 
 .user-form label, .user-form h1 {
     width: 100%;
+    /* color: white; */
 }
 
 .user-form input {
@@ -991,7 +993,7 @@ main{
     border-radius: 10px;
     border: none;
     font-size: 1rem;
-    /* background-color: rgb(144, 202, 255); */
+    /* background-color: rgb(255, 255, 255); */
     background-color: #c1bcff;
 }
 
@@ -1001,13 +1003,14 @@ main{
 }
 
 .user-form label {
-    color: #858585;
+    /* color: #ffffff; */
     font-size: .9rem;
 }
 
 .user-form button {
     height: 40px;
     background-color: #9690FF;
+    /* background-color: rgba(255, 255, 255, 0.507); */
     font-size: medium;
     border: none;
     padding: 5px;
@@ -1083,7 +1086,7 @@ footer{
 .footer-links-ul li div{
     width: 50px;
     height: 50px;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     border-radius: 50%;
     display: flex;
     justify-content: center;

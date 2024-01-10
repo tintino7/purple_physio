@@ -5,7 +5,7 @@
 
 .contact-us {
     background: url(images/contact_us.jpg);
-    height: 250px;
+    height: 200px;
     background-size: cover;
     background-position: 50%;
     
@@ -82,7 +82,9 @@
 }
 
 .hero div h1 {
-    color: rgb(43, 43, 43);
+    color: rgb(80, 79, 79);
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .hero div p {
