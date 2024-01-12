@@ -208,8 +208,8 @@ document.addEventListener('click', (event) => {
             user_form_section.style.top = '-1000px';
             user_form_section.style.left = '-1000px';
             user_form_section.setAttribute('aria-active', 'false')
-            document.body.style.overflowY = ''
-            document.body.style.paddingRight = '0'
+            /* document.body.style.overflowY = '' */
+            /* document.body.style.paddingRight = '0' */
             
         }, 500);
         
@@ -218,12 +218,12 @@ document.addEventListener('click', (event) => {
         user_form_section.style.top = '0';
         user_form_section.style.left = '0';
         user_form_section.setAttribute('aria-active', 'true')
-        document.body.style.overflowY = 'hidden'
+        /* document.body.style.overflowY = 'hidden' */
         user_form.classList.toggle('collapsed');
 
-        if (window.innerWidth > 1000){
+        /* if (window.innerWidth > 1000){
             document.body.style.paddingRight = '18px'
-        }
+        } */
         
     }
 })
