@@ -61,15 +61,16 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 30px;
-    margin: 70px 0;
+    margin: 10px 0;
     flex-wrap: wrap;
+    
 }
 
 
 .hero figure img{
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    width: 400px;
     height: auto;
 }
 
@@ -83,14 +84,15 @@
 
 .hero div h1 {
     color: rgb(80, 79, 79);
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: bold;
 }
 
 .hero div p {
     color: rgb(86, 86, 86);
-    font-size: 1.1rem;
-    
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
 }
 
 .hero div button {
@@ -224,6 +226,7 @@
 }
 
 
+
 .courousal , .courousal-medium{
     margin: 20px 0 40px 0 ;
 }
@@ -231,6 +234,12 @@
 .reviewer {
     display: inline-block;
     margin: 10px 0;
+}
+
+.container-child p {
+    font-size: medium;
+    word-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 @media only screen and (max-width: 1300px) {

@@ -214,6 +214,7 @@ nav {
     position: sticky;
     top: 0;
     background-color: rgb(255, 255, 255);
+    z-index: 1;
     /* background-color: hsla(0,0%,100%,.2)!important;
     backdrop-filter: saturate(500%) blur(20px); */
 }
@@ -270,8 +271,19 @@ nav {
     width: 100%;
     position: fixed;
     top: 4rem;
+    /* max-height: 0;
+    transform: scaleY(0);  */
+    /* transform: translateY(-200%); */
+    transition: transform 0.5s, max-height 0.5s;
     
 }
+
+.is-mobile.collapsed{
+    transform: scaleY(1);
+    max-height: 100vh;
+    transition: transform 0.5s, max-height 0.5s;
+}
+
 
 /* width less than 600px */
 @media only screen and (max-width: 750px) {
@@ -935,6 +947,10 @@ main{
 /* end of clinic-info-timing-address */
 
 
+
+
+
+
 /* Start of user form */
 .user-form-section {
     /* background-color: #ffffff; */
@@ -976,6 +992,12 @@ main{
     transform: translateY(-25px);
     transition: opacity 0.5s, transform 0.5s;   
 }
+
+
+.user-form.collapsed{
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 
 .user-form h1 {
@@ -1046,10 +1068,7 @@ main{
 }
 
 
-.user-form.collapsed {
-    opacity: 1;
-  transform: translateY(0);
-}
+
 
 /* End of user form */
 
@@ -1168,3 +1187,13 @@ footer{
 
 
 
+
+
+/* html body {
+    background-color: #000000;
+}
+
+html body h1, h2, h3, h4, h5, p {
+    color: #82e392;
+}
+ */
