@@ -29,7 +29,7 @@ html {
     left: 25%;
     margin: 50px 10px;
     opacity: 0;
-    transform: translateY(-15px);
+    transform: translateY(-200%);
     transition: opacity 0.5s, transform 0.5s;
     z-index: 3;
     border-radius: 10px;
@@ -49,7 +49,7 @@ html {
 
     .alert{
         width: 95%;
-        left: 2.5%;
+        left: 0;
         font-size: small;
 
     }
@@ -59,7 +59,7 @@ html {
 
     .alert{
         width: 95%;
-        left: 2.5%;
+        left: 0;
         font-size: x-small;
 
     }
@@ -214,7 +214,7 @@ nav {
     position: sticky;
     top: 0;
     background-color: rgb(255, 255, 255);
-    z-index: 1;
+    z-index: 2;
     /* background-color: hsla(0,0%,100%,.2)!important;
     backdrop-filter: saturate(500%) blur(20px); */
 }
@@ -265,23 +265,39 @@ nav {
 
 
 /* only show when menu bar clicked */
-.is-mobile {
+/* .is-mobile {
     display: none;
     background-color: transparent;
     width: 100%;
     position: fixed;
     top: 4rem;
-    /* max-height: 0;
-    transform: scaleY(0);  */
-    /* transform: translateY(-200%); */
+    max-height: 0;
+    transform: scaleY(0); 
+    transform: translateY(-200%);
     transition: transform 0.5s, max-height 0.5s;
     
+} */
+
+.is-mobile{
+    background-color: #ffffff;
+    /* position: relative;
+    top: 0; */
+    /* max-height: 0;
+    opacity: 0; */
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    transform: translateY(-110%);
+    transition: transform 1s;
 }
 
 .is-mobile.collapsed{
-    transform: scaleY(1);
-    max-height: 100vh;
-    transition: transform 0.5s, max-height 0.5s;
+    /* transform: scaleY(1); */
+    transform: translateY(0);
+    position: fixed;
+    /* top: 20px; */
+    transition: transform 1s;
 }
 
 

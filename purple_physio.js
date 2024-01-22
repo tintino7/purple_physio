@@ -2,14 +2,14 @@
 function open_menu (){
     const is_mobile = document.querySelector('.is-mobile');
 
-    is_mobile.style.display = 'block'
-    /* is_mobile.classList.toggle('collapsed') */
-    is_mobile.style.position = 'fixed'
+    /* is_mobile.style.display = 'block' */
+    is_mobile.classList.toggle('collapsed')
+    /* is_mobile.style.position = 'fixed' */
     
     document.querySelector('.close').style.display = 'inline'
     document.querySelector('.menu').style.display = 'none'
-    document.querySelector('nav').setAttribute('aria-open', 'true')
-    document.querySelector('main').style.display = 'none'
+    /* document.querySelector('nav').setAttribute('aria-open', 'true')
+    document.querySelector('main').style.display = 'none' */
 }
 
 /* close nav menu if mobile */
@@ -17,14 +17,14 @@ function close_menu(){
 
     const is_mobile = document.querySelector('.is-mobile');
 
-    is_mobile.style.display = 'none'
-   /*  is_mobile.classList.toggle('collapsed') */
-    is_mobile.style.position = 'static'
+    /* is_mobile.style.display = 'none' */
+    is_mobile.classList.toggle('collapsed')
+    /* is_mobile.style.position = 'static' */
    
     document.querySelector('.menu').style.display = 'inline'
     document.querySelector('.close').style.display = 'none'
-    document.querySelector('nav').setAttribute('aria-open', 'false')
-    document.querySelector('main').style.display = 'block'
+    /* document.querySelector('nav').setAttribute('aria-open', 'false')
+    document.querySelector('main').style.display = 'block' */
 }
 
 let menu_button = document.querySelector('.menu').onclick = open_menu
