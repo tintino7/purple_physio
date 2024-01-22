@@ -16,7 +16,10 @@ html {
 }
 
 
-
+p, h3, h4, h5, h6 {
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
 
 
 /* Start of alert */
@@ -457,6 +460,8 @@ main{
 .hero-h2 {
     font-size: 1.25rem;
     font-weight: 200;
+    word-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 
@@ -503,6 +508,11 @@ main{
         font-size: 1rem;
         font-weight: 300;
         
+    }
+
+    .hero-h1{
+        font-size: 2.25rem;
+        font-weight: 550;
     }
   }
 
@@ -552,6 +562,11 @@ main{
     .sub-main-div .hero-h2 {
         font-size: 1rem;
         font-weight: 300;
+    }
+
+    .hero-h1{
+        font-size: 2.25rem;
+        font-weight: 550;
     }
     
   }
@@ -603,6 +618,7 @@ main{
     font-weight: 500;
     color: rgb(124, 124, 124);
 }
+
 
 @media only screen and (max-width: 500px) {
     .hero2-sub {

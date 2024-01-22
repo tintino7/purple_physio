@@ -93,7 +93,10 @@ nav {
 .c-address div * {
     margin: 10px;
     font-weight: 550;
+    font-size: medium;
     color: rgb(88, 86, 86);
+    word-spacing: 1.5px;
+    letter-spacing: 1px;
 }
 
 .c-address div h1 {
