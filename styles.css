@@ -16,9 +16,9 @@ html {
 }
 
 
-p, h3, h4, h5, h6 {
+.spacing {
     word-spacing: 2px;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
 }
 
 

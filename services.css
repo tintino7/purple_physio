@@ -91,10 +91,8 @@
 }
 
 .feature h3 {
-    /* width: 50%; */
     text-align: center;
     font-size: medium;
-    /* background-color: aqua; */
 }
 
 
@@ -122,6 +120,11 @@
     .features-heading {
         font-size: 1.4rem;
     }
+
+    .feature h3 {
+        text-align: center;
+        font-size: 1rem;
+    }
 }
 
 /* End of salient features */
@@ -131,13 +134,18 @@
 /* Start of services list */
 
 .services-list {
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     margin: 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: start;
+    /* border: 2px dotted black;
+ */
 }
 
 .services-list-container{
     width: 50%;
+    margin: 20px 10px;
 }
 
 .ser-list {
@@ -203,9 +211,82 @@
 }
 
 
+/* End of services list */
+
+
+
+
+
+
+/* Start of services hero */
+.service-hero {
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.ser-hero-img img {
+    width: 70%;
+    height: auto;
+    margin: 0 15%;
+}
+
+
+
+.ser-hero h2 {
+    font-size: 1.5rem;
+    font-weight: 1rem;
+    color: rgb(111, 111, 111);
+    margin: 0 0 10px 0;
+}
+
+.ser-hero p {
+    font-size: 1rem;
+    color: rgb(111, 111, 111);
+    line-height: 23px;
+}
+/* End of services hero */
+
+
+/* Media queries for both service list and service hero */
+
 @media only screen and (max-width: 630px) {
     .services-list-container{
         width: 100%;
+    }
+
+    .services-list {
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .ser-list h1 {
+        font-size: medium;
+        font-weight: 0.4rem;
+    }
+
+    .service-hero {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .services-list-container{
+        width: 80%;
+    }
+
+    .services-list{    
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .service-hero {
+        width: 80%;
     }
 }
 
@@ -218,4 +299,28 @@
 }
 
 
-/* End of services list */
+/* End of media queries */
+
+
+/* Start of service button */
+
+.service-button {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+/* End of service button */
+
+
+/* Start of special services */
+
+.hero2-h2{
+    font-size: 1.4rem;
+    font-weight: 1rem;
+}
+
+.hero2-p{
+    font-size: 1.1rem;
+}
+
+/* End of special services */
