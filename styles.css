@@ -218,8 +218,7 @@ nav {
     top: 0;
     background-color: rgb(255, 255, 255);
     z-index: 2;
-    /* background-color: hsla(0,0%,100%,.2)!important;
-    backdrop-filter: saturate(500%) blur(20px); */
+    
 }
 
 /* nav-item == all the <li/> consisting nav links and nav-item-menu == <li/> with Hamburger menu*/ 
@@ -234,7 +233,6 @@ nav {
 /* Buttons with Menu and Close  */
 .menu:hover,.menu:active, .close:hover, .close:active, .nav-ul:hover, .nav-ul:active /* cause of weird action */ {
     cursor: pointer;
-    /* background-color: white; */
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -256,7 +254,6 @@ nav {
 
 .menu, .close {
     display: none;
-    /* background-color: rgb(252, 252, 252); */
     background-color: transparent;
     border: none;
 }
@@ -267,26 +264,8 @@ nav {
 }
 
 
-/* only show when menu bar clicked */
-/* .is-mobile {
-    display: none;
-    background-color: transparent;
-    width: 100%;
-    position: fixed;
-    top: 4rem;
-    max-height: 0;
-    transform: scaleY(0); 
-    transform: translateY(-200%);
-    transition: transform 0.5s, max-height 0.5s;
-    
-} */
-
 .is-mobile{
     background-color: #ffffff;
-    /* position: relative;
-    top: 0; */
-    /* max-height: 0;
-    opacity: 0; */
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -296,10 +275,8 @@ nav {
 }
 
 .is-mobile.collapsed{
-    /* transform: scaleY(1); */
     transform: translateY(0);
     position: fixed;
-    /* top: 20px; */
     transition: transform 1s;
 }
 
@@ -393,8 +370,6 @@ main{
     gap: 1rem;
     width: 40%;
     height: 100%;
-    /* background: linear-gradient(to left, #ebdffa76, #f8f1ff27); */
-    /* background-color: #e1edf92d; */
     justify-content: center;
     border-radius: 30px;
     margin-left: 10%;
@@ -418,7 +393,6 @@ main{
 
 .sub-main-div h1 {
     color: rgb(31, 31, 32);
-    /* background-color: rgba(240, 244, 255, 0.226); */
     text-shadow: 0 0 1px rgb(128, 125, 125);
     font-family: Arial, Helvetica, sans-serif;
     
@@ -438,7 +412,6 @@ main{
     border-radius: 5px;
     color: white;
     font-weight: 500;
-    /* background-color: #a17af0; */
     background: linear-gradient(to right, #b28cfe 0%, #ab82ff, #b28cfe 100%);
 
     font-family: Arial, Helvetica, sans-serif;
@@ -449,7 +422,6 @@ main{
 .main-button:hover, .book-appoinment:hover {
     cursor: pointer;
     transform: scale(1.03);
-    /* box-shadow: 0px 0px 2px #424242aa; */
 }
 
 .hero-h1 {
@@ -533,7 +505,6 @@ main{
         align-items: center;
         background-position: center 75%;
         border-radius: 20px;
-        /* border: 1px solid red; */
     }
      
     .home-banner {
@@ -546,8 +517,6 @@ main{
         margin: 0;
         padding: 15% 2rem;
         flex-direction: column;
-        
-        /* border: 1px solid black; */
     }
     .sub-main-div h1 {
         
@@ -571,12 +540,7 @@ main{
     
   }
 
-/* .main-img {
-    width: 100%;
-    height: 80vh;
-    border-radius: 30px;
-    transition: transform 0.3s;
-} */
+
 /* End of Main content */
 
 
@@ -713,9 +677,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* justify-content: space-evenly; */
     align-items: center;
-    /* gap: 1rem; */
     background-color: #f8f9fa;
     padding: 3rem;
     width: 80%;
@@ -724,8 +686,6 @@ main{
     border-radius: 20px;
     margin-bottom: 30px;
     box-shadow: 0 0 2px rgb(225, 223, 223);
-    /* padding: 1rem; */
-    
 }
 
 .last-hero p {
@@ -823,7 +783,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    
     margin-bottom: 40px;
 }
 
@@ -1008,9 +967,6 @@ main{
     padding: 50px 50px 70px 50px;
     border-radius: 10px;
     overflow-y: '';
-    /* background-color: #9690ff98 !important;
-    backdrop-filter: saturate(500%) blur(20px); */
-    
 }
 
 
@@ -1049,24 +1005,20 @@ main{
     border-radius: 10px;
     border: none;
     font-size: 1rem;
-    /* background-color: rgb(255, 255, 255); */
     background-color: #c1bcff;
 }
 
 .user-form input:focus {
-    /* border: 1px solid rgb(65, 65, 65); */
     outline: none;
 }
 
 .user-form label {
-    /* color: #ffffff; */
     font-size: .9rem;
 }
 
 .user-form button {
     height: 40px;
     background-color: #9690FF;
-    /* background-color: rgba(255, 255, 255, 0.507); */
     font-size: medium;
     border: none;
     padding: 5px;
@@ -1081,8 +1033,6 @@ main{
 .user-form * {
     display: block;
     width: 30vw;
-    /* height: 30px; */
-    
 }
 
 
@@ -1112,9 +1062,7 @@ main{
 
 /* Start of footer */
 footer{
-    /* background-color: rgb(255, 255, 255); */
     background: linear-gradient(rgb(240, 239, 239) 0%, #ffffff 100%);
-    /* border-top:2px solid rgb(212, 212, 212); */
     height: 300px;
     display: flex;
     justify-content: center;
@@ -1139,7 +1087,6 @@ footer{
 .footer-links-ul li div{
     width: 50px;
     height: 50px;
-    /* background-color: rgb(255, 255, 255); */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -1212,20 +1159,4 @@ footer{
 }
 
 
-
-
 /* End of footer */
-
-
-
-
-
-
-/* html body {
-    background-color: #000000;
-}
-
-html body h1, h2, h3, h4, h5, p {
-    color: #82e392;
-}
- */

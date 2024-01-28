@@ -76,7 +76,6 @@ nav {
 .c-address, .c-form {
     width: 45%;
     height: 90%;
-    /* border: 1px solid rgb(198, 198, 198); */
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 }
