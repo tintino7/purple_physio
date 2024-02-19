@@ -67,7 +67,7 @@ handleWindowResize();
 
 
 /* To apply shadow to nav element */
-function apply_shadow(){
+/* function apply_shadow(){
     let scroll_value = window.scrollY
 
     if (scroll_value > 80) {
@@ -80,7 +80,7 @@ function apply_shadow(){
 }
 
 
-document.addEventListener('scroll', apply_shadow);
+document.addEventListener('scroll', apply_shadow); */
 
 
 
